@@ -1,0 +1,26 @@
+void come(res,temp,nums,k,i)
+{
+ if(temp.size()==k) 
+{
+res.push_back(temp);
+return ;
+}
+for(int I=0 ;I<nums.size() ;I++) 
+{ 
+  temp.push_back(nums[i]) ;
+ come(res, temp, nums, k, I+1) ;
+temp. pop_back() ;
+}
+return ;
+inter main () 
+{
+vector<inter> nums;
+for( int I=0 I<n;I++)
+{
+ nums. push_back(i+1);
+}
+vector<inter> temp;
+vector<vector<int>> res;
+come(res, temp, nums, 0,k) ;
+return res;
+}
